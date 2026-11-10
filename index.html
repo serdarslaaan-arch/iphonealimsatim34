@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Alım Satım">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>Apple Alım Satım – Stok ve Kasa</title>
+<style>
+:root{--bg:#0b0b0c;--s1:#151517;--s2:#1e1e21;--line:#2b2b2f;--tx:#f3f3f5;--mu:#8e8e96;--gold:#f4b73c;--gold2:#c98a12;--gr:#3ecf8e;--rd:#ff6b6b}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:15px}
+body{padding:calc(env(safe-area-inset-top) + 10px) 14px calc(env(safe-area-inset-bottom) + 92px)}
+.wrap{max-width:560px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 2px 12px}
+h1{font-size:19px;margin:0;font-weight:800;letter-spacing:.2px}
+h1 span{color:var(--gold)}
+.badge{font-size:11.5px;padding:4px 9px;border-radius:99px;background:var(--s2);color:var(--mu);white-space:nowrap}
+.badge.ok{color:var(--gr)}.badge.warn{color:var(--gold)}
+.card{background:var(--s1);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:12px}
+.big{background:linear-gradient(160deg,#1d1810,#151517 60%);border-color:#3a2f17}
+.row{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0}
+.row+.row{border-top:1px solid var(--line)}
+.lbl{color:var(--mu);font-size:13px}
+.val{font-weight:700;font-variant-numeric:tabular-nums}
+.net{font-size:28px;font-weight:800}
+.gr{color:var(--gr)}.rd{color:var(--rd)}.gd{color:var(--gold)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.grid .card{margin:0}
+.grid .val{font-size:19px;display:block;margin-top:4px}
+.note{color:var(--mu);font-size:12px;line-height:1.45;margin-top:8px}
+h2{font-size:14px;margin:4px 2px 8px;color:var(--mu);font-weight:600;text-transform:uppercase;letter-spacing:.6px}
+table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+th{color:var(--mu);font-weight:600;text-align:right;padding:6px 4px}
+td{padding:8px 4px;text-align:right;border-top:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+input,select,textarea{width:100%;background:var(--s2);color:var(--tx);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:16px;font-family:inherit;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--mu) 50%),linear-gradient(135deg,var(--mu) 50%,transparent 50%);background-position:calc(100% - 18px) 55%,calc(100% - 13px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:32px}
+.search{margin-bottom:10px}
+.chips{display:flex;gap:6px;overflow-x:auto;margin:0 -2px 10px;padding:0 2px 2px}
+.chip{flex:none;background:var(--s1);border:1px solid var(--line);color:var(--mu);border-radius:99px;padding:7px 12px;font-size:13px;font-weight:600}
+.chip.on{background:var(--gold);border-color:var(--gold);color:#1a1200}
+.tog{display:flex;align-items:center;gap:8px;color:var(--mu);font-size:13px;margin:0 2px 12px}
+.tog input{width:auto}
+.grp{background:var(--s1);border:1px solid var(--line);border-radius:14px;margin-bottom:8px;overflow:hidden}
+.gh{display:flex;align-items:center;gap:10px;padding:12px 12px;cursor:pointer}
+.gh .nm{flex:1;font-weight:700}
+.gh .ct{background:var(--gold);color:#1a1200;font-weight:800;border-radius:99px;min-width:26px;text-align:center;padding:2px 8px;font-size:13px}
+.gh .ct.z{background:var(--s2);color:var(--mu)}
+.gh .sub{color:var(--mu);font-size:12px}
+.plus{border:1px solid var(--line);background:var(--s2);color:var(--gold);border-radius:10px;width:32px;height:32px;font-size:20px;line-height:1;cursor:pointer}
+.it{padding:10px 12px;border-top:1px solid var(--line);cursor:pointer}
+.it .t{display:flex;justify-content:space-between;gap:8px;font-weight:600}
+.it .s{color:var(--mu);font-size:12.5px;margin-top:3px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.mono{font-family:ui-monospace,Menlo,monospace;letter-spacing:.3px}
+.empty{text-align:center;color:var(--mu);padding:34px 10px;line-height:1.6}
+nav{position:fixed;left:0;right:0;bottom:0;background:rgba(15,15,17,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;justify-content:center;padding:8px 14px calc(env(safe-area-inset-bottom) + 8px);z-index:5}
+nav .in{display:flex;max-width:560px;width:100%;gap:6px}
+nav button{flex:1;background:none;border:0;color:var(--mu);font-size:13px;padding:8px 4px;border-radius:12px;font-weight:600}
+nav button.on{color:var(--gold);background:var(--s2)}
+.fab{position:fixed;right:18px;bottom:calc(env(safe-area-inset-bottom) + 78px);width:56px;height:56px;border-radius:50%;border:0;background:linear-gradient(145deg,var(--gold),var(--gold2));color:#1a1200;font-size:32px;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.5);z-index:6}
+.btn{border:0;border-radius:12px;padding:13px 16px;font-size:15px;font-weight:700;width:100%;background:var(--s2);color:var(--tx);border:1px solid var(--line)}
+.btn.pri{background:linear-gradient(145deg,var(--gold),var(--gold2));color:#1a1200;border:0}
+.btn.dng{color:var(--rd)}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:20;display:none}
+.ov.on{display:block}
+.sheet{position:absolute;left:0;right:0;bottom:0;max-height:94%;overflow:auto;background:var(--bg);border-radius:20px 20px 0 0;border:1px solid var(--line);padding:16px 14px calc(env(safe-area-inset-bottom) + 20px);max-width:560px;margin:0 auto}
+.sheet h3{margin:0 0 12px;font-size:17px}
+.f{margin-bottom:11px}
+.f label{display:block;color:var(--mu);font-size:12.5px;margin:0 0 5px 2px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sec{color:var(--gold);font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin:16px 2px 8px;padding-top:12px;border-top:1px solid var(--line)}
+.hint{font-size:12px;margin:5px 2px 0;min-height:15px}
+.acts{display:grid;gap:8px;margin-top:14px}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom) + 150px);background:#2a2a2e;color:var(--tx);padding:10px 16px;border-radius:12px;font-size:14px;z-index:40;display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1> <span>Apple</span> Alım Satım</h1>
+    <span id="badge" class="badge ok">Bu telefonda kayıtlı</span>
+  </header>
+  <div id="view"></div>
+</div>
+
+<button class="fab" id="fab" data-act="new" aria-label="Yeni telefon ekle">+</button>
+<nav><div class="in">
+  <button data-tab="ozet" class="on">Özet</button>
+  <button data-tab="stok">Stok</button>
+  <button data-tab="satilan">Satılanlar</button>
+</div></nav>
+
+<div class="ov" id="ov"><div class="sheet" id="sheet"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+// ---------- iPhone model listesi (yeniden eskiye) ----------
+const CATS=[
+{id:"iphone",ad:"iPhone",opt:"Hafıza",idl:"IMEI",series:[
+ ["iPhone 18",[["iPhone 18 Pro Max",[256,512,1024,2048]],["iPhone 18 Pro",[256,512,1024,2048]],["iPhone Fold",[256,512,1024]],["iPhone 18",[256,512]],["iPhone 18e",[128,256,512]],["iPhone Air 2",[256,512,1024]]]],
+ ["iPhone 17",[["iPhone 17 Pro Max",[256,512,1024,2048]],["iPhone 17 Pro",[256,512,1024,2048]],["iPhone Air",[256,512,1024]],["iPhone 17",[256,512]]]],
+ ["iPhone 16",[["iPhone 16 Pro Max",[256,512,1024]],["iPhone 16 Pro",[128,256,512,1024]],["iPhone 16 Plus",[128,256,512]],["iPhone 16",[128,256,512]],["iPhone 16e",[128,256,512]]]],
+ ["iPhone 15",[["iPhone 15 Pro Max",[256,512,1024]],["iPhone 15 Pro",[128,256,512,1024]],["iPhone 15 Plus",[128,256,512]],["iPhone 15",[128,256,512]]]],
+ ["iPhone 14",[["iPhone 14 Pro Max",[128,256,512,1024]],["iPhone 14 Pro",[128,256,512,1024]],["iPhone 14 Plus",[128,256,512]],["iPhone 14",[128,256,512]]]],
+ ["iPhone 13",[["iPhone 13 Pro Max",[128,256,512,1024]],["iPhone 13 Pro",[128,256,512,1024]],["iPhone 13",[128,256,512]],["iPhone 13 mini",[128,256,512]]]],
+ ["iPhone 12",[["iPhone 12 Pro Max",[128,256,512]],["iPhone 12 Pro",[128,256,512]],["iPhone 12",[64,128,256]],["iPhone 12 mini",[64,128,256]]]],
+ ["iPhone 11",[["iPhone 11 Pro Max",[64,256,512]],["iPhone 11 Pro",[64,256,512]],["iPhone 11",[64,128,256]]]],
+ ["iPhone SE",[["iPhone SE (3. nesil)",[64,128,256]],["iPhone SE (2. nesil)",[64,128,256]],["iPhone SE (1. nesil)",[16,32,64,128]]]],
+ ["iPhone X / XS / XR",[["iPhone XS Max",[64,256,512]],["iPhone XS",[64,256,512]],["iPhone XR",[64,128,256]],["iPhone X",[64,256]]]],
+ ["iPhone 8 ve eskisi",[["iPhone 8 Plus",[64,128,256]],["iPhone 8",[64,128,256]],["iPhone 7 Plus",[32,128,256]],["iPhone 7",[32,128,256]],["iPhone 6s Plus",[16,32,64,128]],["iPhone 6s",[16,32,64,128]],["iPhone 6 Plus",[16,64,128]],["iPhone 6",[16,64,128]]]]
+]},
+{id:"ipad",ad:"iPad",opt:"Hafıza",idl:"IMEI / Seri no",series:[
+ ["iPad Pro",[["iPad Pro 13 inç (M5)",[256,512,1024,2048]],["iPad Pro 11 inç (M5)",[256,512,1024,2048]],["iPad Pro 13 inç (M4)",[256,512,1024,2048]],["iPad Pro 11 inç (M4)",[256,512,1024,2048]],["iPad Pro 12.9 inç (M2)",[128,256,512,1024,2048]],["iPad Pro 11 inç (M2)",[128,256,512,1024,2048]],["iPad Pro 12.9 inç (M1)",[128,256,512,1024,2048]],["iPad Pro 11 inç (M1)",[128,256,512,1024,2048]]]],
+ ["iPad Air",[["iPad Air 13 inç (M3)",[128,256,512,1024]],["iPad Air 11 inç (M3)",[128,256,512,1024]],["iPad Air 13 inç (M2)",[128,256,512,1024]],["iPad Air 11 inç (M2)",[128,256,512,1024]],["iPad Air (5. nesil)",[64,256]],["iPad Air (4. nesil)",[64,256]]]],
+ ["iPad",[["iPad (A16)",[128,256,512]],["iPad (10. nesil)",[64,256]],["iPad (9. nesil)",[64,256]],["iPad (8. nesil)",[32,128]]]],
+ ["iPad mini",[["iPad mini (A17 Pro)",[128,256,512]],["iPad mini (6. nesil)",[64,256]]]]
+]},
+{id:"mac",ad:"Mac",opt:"Hafıza",idl:"Seri no",series:[
+ ["MacBook Air",[["MacBook Air 15 inç (M4)"],["MacBook Air 13 inç (M4)"],["MacBook Air 15 inç (M3)"],["MacBook Air 13 inç (M3)"],["MacBook Air 15 inç (M2)"],["MacBook Air 13 inç (M2)"],["MacBook Air 13 inç (M1)"]]],
+ ["MacBook Pro",[["MacBook Pro 14 inç (M5)"],["MacBook Pro 16 inç (M4 Pro/Max)"],["MacBook Pro 14 inç (M4 Pro/Max)"],["MacBook Pro 14 inç (M4)"],["MacBook Pro 16 inç (M3 Pro/Max)"],["MacBook Pro 14 inç (M3 Pro/Max)"],["MacBook Pro 14 inç (M3)"],["MacBook Pro 16 inç (M2 Pro/Max)"],["MacBook Pro 14 inç (M2 Pro/Max)"],["MacBook Pro 13 inç (M2)"],["MacBook Pro 16 inç (M1 Pro/Max)"],["MacBook Pro 14 inç (M1 Pro/Max)"],["MacBook Pro 13 inç (M1)"]]],
+ ["iMac / Mac mini / Studio",[["iMac 24 inç (M4)"],["iMac 24 inç (M3)"],["iMac 24 inç (M1)"],["Mac mini (M4)"],["Mac mini (M2)"],["Mac mini (M1)"],["Mac Studio (M4 Max / M3 Ultra)"],["Mac Studio (M2 Max / M2 Ultra)"],["Mac Studio (M1 Max / M1 Ultra)"],["Mac Pro (M2 Ultra)"]]]
+]},
+{id:"watch",ad:"Apple Watch",opt:"Boyut",idl:"Seri no",series:[
+ ["Apple Watch",[["Apple Watch Series 11",["42 mm","46 mm"]],["Apple Watch Ultra 3",["49 mm"]],["Apple Watch SE 3",["40 mm","44 mm"]],["Apple Watch Series 10",["42 mm","46 mm"]],["Apple Watch Ultra 2",["49 mm"]],["Apple Watch Series 9",["41 mm","45 mm"]],["Apple Watch SE (2. nesil)",["40 mm","44 mm"]],["Apple Watch Ultra",["49 mm"]],["Apple Watch Series 8",["41 mm","45 mm"]],["Apple Watch Series 7",["41 mm","45 mm"]],["Apple Watch Series 6",["40 mm","44 mm"]]]]
+]},
+{id:"airpods",ad:"AirPods",opt:"",idl:"Seri no",series:[
+ ["AirPods",[["AirPods Pro 3"],["AirPods Pro 2 (USB-C)"],["AirPods Pro 2 (Lightning)"],["AirPods 4 (Aktif Gürültü Engelleme)"],["AirPods 4"],["AirPods 3"],["AirPods 2"],["AirPods Max (USB-C)"],["AirPods Max (Lightning)"]]]
+]}
+];
+const MODELS=[],MCAT={},CAT={};
+CATS.forEach(c=>{CAT[c.id]=c;c.series.forEach(([s,l])=>l.forEach(([n,st])=>{MODELS.push({name:n,st:st||[],series:s,cat:c.id});MCAT[n]=c.id}))});
+const MIDX={};MODELS.forEach((m,i)=>MIDX[m.name]=i);
+const ANYOPT={iphone:[64,128,256,512,1024,2048],ipad:[64,128,256,512,1024,2048],mac:[256,512,1024,2048,4096,8192],watch:["40 mm","41 mm","42 mm","44 mm","45 mm","46 mm","49 mm"],airpods:[]};
+const catOf=p=>p.kat||MCAT[p.model]||"iphone";
+const cleanId=(v,c)=>c==="iphone"?v.replace(/\D/g,""):v.replace(/[^A-Za-z0-9]/g,"").toUpperCase();
+const COLORS=["Siyah","Beyaz","Gümüş","Altın","Uzay Grisi","Mavi","Lacivert","Yeşil","Mor","Pembe","Kırmızı","Sarı","Turuncu","Doğal Titanyum","Siyah Titanyum","Beyaz Titanyum","Çöl Titanyumu","Mavi Titanyum","Uzay Siyahı","Gece Yarısı","Yıldız Işığı","Kozmik Turuncu","Derin Mavi","Buzul","Bordo","Koyu Vişne","Açık Mavi","Gece Siyahı","Yıldız Beyazı","Bulut Mavisi","Gökyüzü Mavisi"];
+const KAYNAK=["Sahibinden","Letgo","Kendi müşterim","Diğer"];
+const AYLAR=["Oca","Şub","Mar","Nis","May","Haz","Tem","Ağu","Eyl","Eki","Kas","Ara"];
+
+// ---------- yardımcılar ----------
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money=n=>(n<0?"-":"")+"₺"+Math.abs(Math.round(n)).toLocaleString("tr-TR");
+const today=()=>{const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
+const fmtD=s=>s?s.split("-").reverse().join("."):"";
+const GB=v=>typeof v==="number"?(v>=1024?(v/1024)+" TB":v+" GB"):(v||"");
+const numOrNull=v=>{v=String(v).trim().replace(",",".");return v===""||isNaN(+v)?null:+v};
+const isSold=p=>p.satisFiyat!=null;
+const cost=p=>(p.alisFiyat||0)+(p.masraf||0);
+const profit=p=>(p.satisFiyat||0)-cost(p);
+const clsP=n=>n>0?"gr":n<0?"rd":"";
+let toastT;function toast(m){const t=$("toast");t.textContent=m;t.style.display="block";clearTimeout(toastT);toastT=setTimeout(()=>t.style.display="none",2200)}
+
+// ---------- veri katmanı: bulut (db) varsa orada, yoksa bu cihazda ----------
+let phones=[],tab="ozet",q="",showAll=false,editing=null,saving=false,fcat="all";
+const open=new Set();
+const LS="iphone-takip-v1";
+function lsLoad(){try{return JSON.parse(localStorage.getItem(LS)||"[]")}catch(e){return[]}}
+function lsSave(){try{localStorage.setItem(LS,JSON.stringify(phones));return true}catch(e){return false}}
+const LSB="iphone-takip-yedek";
+async function init(){
+  phones=lsLoad();render();
+  try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(e){}
+}
+async function persist(p){
+  const prev=phones.slice(),i=phones.findIndex(x=>x.id===p.id);
+  if(i>=0)phones[i]=p;else phones.push(p);
+  if(!lsSave()){phones=prev;throw new Error("ls")}
+  render();
+}
+async function remove(id){
+  const prev=phones;phones=phones.filter(x=>x.id!==id);
+  if(!lsSave()){phones=prev;throw new Error("ls")}
+  render();
+}
+
+// ---------- görünümler ----------
+function render(){
+  document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.tab===tab));
+  $("fab").style.display=tab==="ozet"?"none":"block";
+  const v=$("view");
+  if(tab==="ozet")v.innerHTML=ozetHTML();
+  else{
+    const chips=[["all","Tümü"]].concat(CATS.map(c=>[c.id,c.ad])).map(([id,ad])=>{
+      const n=tab==="stok"?phones.filter(p=>!isSold(p)&&(id==="all"||catOf(p)===id)).length:phones.filter(p=>isSold(p)&&(id==="all"||catOf(p)===id)).length;
+      return `<button class="chip ${fcat===id?"on":""}" data-cat="${id}">${ad} ${n}</button>`}).join("");
+    v.innerHTML=`<div class="chips">${chips}</div><input class="search" id="q" type="search" placeholder="Model, IMEI, renk, kişi ara…" value="${esc(q)}">`+
+      (tab==="stok"?`<label class="tog"><input type="checkbox" id="showAll" ${showAll?"checked":""}> Stokta olmayan modelleri de göster</label>`:"")+
+      `<div id="list">${tab==="stok"?stokHTML():satilanHTML()}</div>`;
+  }
+}
+function renderList(){$("list").innerHTML=tab==="stok"?stokHTML():satilanHTML()}
+
+function ozetHTML(){
+  const sold=phones.filter(isSold),stock=phones.filter(p=>!isSold(p));
+  const gelir=sold.reduce((a,p)=>a+p.satisFiyat,0);
+  const gider=phones.reduce((a,p)=>a+cost(p),0);
+  const net=gelir-gider;
+  const kar=sold.reduce((a,p)=>a+profit(p),0);
+  const stokMal=stock.reduce((a,p)=>a+cost(p),0);
+  const beklenen=stock.reduce((a,p)=>a+(p.hedefFiyat!=null?p.hedefFiyat-cost(p):0),0);
+  const months={};
+  const m=k=>months[k]||(months[k]={a:0,s:0,k:0});
+  phones.forEach(p=>{if(p.alisTarih)m(p.alisTarih.slice(0,7)).a+=cost(p);if(isSold(p)&&p.satisTarih){const o=m(p.satisTarih.slice(0,7));o.s+=p.satisFiyat;o.k+=profit(p)}});
+  const keys=Object.keys(months).sort().reverse().slice(0,6);
+  return `<div class="card big">
+    <div class="lbl">Net kasa (gelir − gider)</div>
+    <div class="net ${clsP(net)}">${money(net)}</div>
+    <div class="row" style="margin-top:6px"><span class="lbl">Toplam gelir (satışlar)</span><span class="val gr">${money(gelir)}</span></div>
+    <div class="row"><span class="lbl">Toplam gider (alış + masraf)</span><span class="val rd">${money(gider)}</span></div>
+    <div class="note">Stoktaki cihazlara verilen para gider görünür, satılınca gelire döner. Gerçek kazanç aşağıdaki “Gerçekleşen kâr”dır.</div>
+  </div>
+  <div class="grid">
+    <div class="card"><span class="lbl">Gerçekleşen kâr</span><span class="val ${clsP(kar)}">${money(kar)}</span></div>
+    <div class="card"><span class="lbl">Stokta</span><span class="val gd">${stock.length} adet</span></div>
+    <div class="card"><span class="lbl">Stok maliyeti</span><span class="val">${money(stokMal)}</span></div>
+    <div class="card"><span class="lbl">Beklenen kâr (hedefe göre)</span><span class="val ${clsP(beklenen)}">${money(beklenen)}</span></div>
+  </div>
+  <h2>Aylık</h2>
+  <div class="card">${keys.length?`<table><tr><th>Ay</th><th>Alış+masraf</th><th>Satış</th><th>Kâr</th></tr>${keys.map(k=>{const o=months[k];return `<tr><td>${AYLAR[+k.slice(5)-1]} ${k.slice(2,4)}</td><td>${money(o.a)}</td><td>${money(o.s)}</td><td class="${clsP(o.k)}">${money(o.k)}</td></tr>`}).join("")}</table>`:`<div class="empty">Henüz kayıt yok. Stok sekmesinden “+” ile ilk ürünü ekle.</div>`}</div>
+  <h2>Yedek</h2>
+  <div class="card"><div class="note" style="margin:0 0 10px">${backupNote()}</div>
+  <div class="acts" style="margin:0"><button class="btn pri" data-act="bak">Yedek al</button><button class="btn" data-act="geri">Yedekten geri yükle</button><button class="btn" data-act="csv">Excel için indir (CSV)</button></div></div>
+  <input type="file" id="fFile" accept=".json,application/json" style="display:none">`;
+}
+
+function backupNote(){
+  let t=null;try{t=localStorage.getItem(LSB)}catch(e){}
+  if(!t)return "Henüz yedek alınmadı. Telefon değişirse veya tarayıcı verisi silinirse kayıtlar gider; arada bir yedek al ve dosyayı Dosyalar'a / iCloud'a kaydet.";
+  const days=Math.floor((Date.now()-new Date(t).getTime())/864e5);
+  return "Son yedek: "+fmtD(t)+(days>=14?" — yedek almanın zamanı geldi.":".");
+}
+async function saveFile(name,text,mime){
+  const blob=new Blob([text],{type:mime});
+  try{
+    const f=new File([blob],name,{type:mime});
+    if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f]});return true}
+  }catch(e){if(e&&e.name==="AbortError")return false}
+  const u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000);return true;
+}
+async function backup(){
+  if(await saveFile("apple-yedek-"+today()+".json",JSON.stringify({v:1,phones}),"application/json")){
+    try{localStorage.setItem(LSB,today())}catch(e){}
+    render();toast("Yedek hazır")}
+}
+function restore(file){
+  const r=new FileReader();
+  r.onload=()=>{
+    try{
+      const d=JSON.parse(r.result);if(!d||!Array.isArray(d.phones))throw 0;
+      const m={};phones.forEach(p=>m[p.id]=p);d.phones.forEach(p=>{if(p&&p.id&&p.model)m[p.id]=p});
+      phones=Object.values(m);
+      if(!lsSave())throw 1;
+      render();toast(d.phones.length+" kayıt yüklendi");
+    }catch(e){toast("Yedek dosyası okunamadı")}
+  };
+  r.readAsText(file);
+}
+function match(p,t){
+  if(!t)return true;t=t.toLowerCase();
+  return [p.model,GB(p.hafiza),p.renk,p.imei,p.kisiAd,p.kisiTel,p.aliciAd,p.kaynak].some(x=>String(x||"").toLowerCase().includes(t));
+}
+function itemHTML(p){
+  return `<div class="it" data-act="edit" data-id="${esc(p.id)}">
+    <div class="t"><span>${esc(GB(p.hafiza))}${p.renk?" · "+esc(p.renk):""}</span><span>${money(p.alisFiyat||0)}${p.hedefFiyat!=null?` <span class="gd">→ ${money(p.hedefFiyat)}</span>`:""}</span></div>
+    <div class="s"><span class="mono">${p.imei?esc(p.imei):"IMEI/Seri yok"}</span><span>${esc(p.kaynak||"")}${p.kisiAd?" · "+esc(p.kisiAd):""} · ${fmtD(p.alisTarih)}</span></div>
+  </div>`;
+}
+function stokHTML(){
+  const stock=phones.filter(p=>!isSold(p)&&(fcat==="all"||catOf(p)===fcat)&&match(p,q));
+  const by={};stock.forEach(p=>(by[p.model]||(by[p.model]=[])).push(p));
+  const names=Object.keys(by);
+  if(showAll&&!q)MODELS.forEach(m=>{if((fcat==="all"||m.cat===fcat)&&!by[m.name])by[m.name]=[]});
+  const all=Object.keys(by).sort((a,b)=>(MIDX[a]??999)-(MIDX[b]??999)||a.localeCompare(b));
+  if(!all.length)return `<div class="empty">${q?"Sonuç yok.":"Stokta ürün yok.<br>Sağ alttaki “+” ile yeni ürün ekle."}</div>`;
+  return all.map(n=>{
+    const l=by[n],c=l.reduce((a,p)=>a+cost(p),0),isOpen=open.has(n)||!!q;
+    return `<div class="grp"><div class="gh" data-act="tg" data-model="${esc(n)}">
+      <span class="nm">${esc(n)}${l.length?`<div class="sub">Maliyet ${money(c)}</div>`:""}</span>
+      <span class="ct ${l.length?"":"z"}">${l.length}</span>
+      <button class="plus" data-act="addm" data-model="${esc(n)}" aria-label="${esc(n)} ekle">+</button></div>
+      ${isOpen?l.slice().sort((a,b)=>(b.alisTarih||"").localeCompare(a.alisTarih||"")).map(itemHTML).join(""):""}</div>`;
+  }).join("");
+}
+function satilanHTML(){
+  const l=phones.filter(p=>isSold(p)&&(fcat==="all"||catOf(p)===fcat)&&match(p,q)).sort((a,b)=>(b.satisTarih||"").localeCompare(a.satisTarih||""));
+  if(!l.length)return `<div class="empty">${q?"Sonuç yok.":"Henüz satış yok.<br>Stoktan bir ürünü açıp satış fiyatını girince burada görünür."}</div>`;
+  const ciro=l.reduce((a,p)=>a+p.satisFiyat,0),kar=l.reduce((a,p)=>a+profit(p),0);
+  return `<div class="card"><div class="row"><span class="lbl">${l.length} adet · ciro</span><span class="val">${money(ciro)}</span></div><div class="row"><span class="lbl">Kâr</span><span class="val ${clsP(kar)}">${money(kar)}</span></div></div>`+
+  l.map(p=>`<div class="grp"><div class="it" style="border:0" data-act="edit" data-id="${esc(p.id)}">
+    <div class="t"><span>${esc(p.model)} ${esc(GB(p.hafiza))}${p.renk?" · "+esc(p.renk):""}</span><span class="${clsP(profit(p))}">${money(profit(p))}</span></div>
+    <div class="s"><span class="mono">${p.imei?esc(p.imei):"IMEI/Seri yok"}</span><span>${money(cost(p))} → ${money(p.satisFiyat)}</span></div>
+    <div class="s"><span>${p.aliciAd?esc(p.aliciAd):"Alıcı yazılmadı"}</span><span>${fmtD(p.satisTarih)}</span></div></div></div>`).join("");
+}
+
+// ---------- form ----------
+function stOpts(model,sel,cat){
+  const k=MIDX[model]!=null?MODELS[MIDX[model]].st:[];
+  const l=(k.length?k:ANYOPT[cat]||[]).slice();
+  if(sel!==""&&sel!=null&&!l.includes(sel))l.push(sel);
+  return `<option value="">${esc(CAT[cat].opt||"Seçenek")}</option>`+l.map(v=>`<option value="${esc(v)}" ${sel===v?"selected":""}>${esc(GB(v))}</option>`).join("");
+}
+function modelOpts(cat,sel){
+  return `<option value="">Model seç</option>`+CAT[cat].series.map(([s,l])=>`<optgroup label="${esc(s)}">${l.map(([n])=>`<option ${sel===n?"selected":""}>${esc(n)}</option>`).join("")}</optgroup>`).join("")+`<option value="__c" ${sel==="__c"?"selected":""}>Diğer (elle yaz)</option>`;
+}
+function syncCat(){
+  const c=$("fCat").value;
+  $("fStL").textContent=CAT[c].opt;$("fStW").style.display=CAT[c].opt?"block":"none";
+  $("fImeiL").textContent=CAT[c].idl;
+  $("fImei").inputMode=c==="iphone"?"numeric":"text";
+  $("fImei").placeholder=c==="iphone"?"15 haneli IMEI":"Seri numarası";
+}
+function openForm(id,preModel){
+  const p=id?phones.find(x=>x.id===id):null;
+  const d=p||{model:preModel||"",alisTarih:today(),kaynak:"Sahibinden"};
+  editing=id||null;
+  const custom=d.model&&MIDX[d.model]==null;
+  const cat=d.kat||MCAT[d.model]||(fcat!=="all"?fcat:"iphone");
+  const v=x=>x==null?"":esc(x);
+  $("sheet").innerHTML=`<h3>${p?"Kaydı düzenle":"Yeni ürün"}</h3>
+  <div class="f"><label>Ürün türü</label><select id="fCat">${CATS.map(c=>`<option value="${c.id}" ${cat===c.id?"selected":""}>${c.ad}</option>`).join("")}</select></div>
+  <div class="f"><label>Model</label><select id="fModel">${modelOpts(cat,custom?"__c":d.model)}</select>
+    <input id="fModelC" style="margin-top:8px;display:${custom?"block":"none"}" placeholder="Model adı" value="${custom?v(d.model):""}"></div>
+  <div class="two"><div class="f" id="fStW"><label id="fStL">${CAT[cat].opt}</label><select id="fSt">${stOpts(custom?"":d.model,d.hafiza,cat)}</select></div>
+  <div class="f"><label>Renk</label><input id="fRenk" list="colors" value="${v(d.renk)}" placeholder="Renk"><datalist id="colors">${COLORS.map(c=>`<option>${c}</option>`).join("")}</datalist></div></div>
+  <div class="f"><label id="fImeiL">IMEI</label><input id="fImei" maxlength="20" value="${v(d.imei)}"><div class="hint" id="imeiH"></div></div>
+  <div class="sec">Alış</div>
+  <div class="two"><div class="f"><label>Alış fiyatı (₺)</label><input id="fAlis" inputmode="decimal" value="${v(d.alisFiyat)}"></div>
+  <div class="f"><label>Alış tarihi</label><input id="fAlisT" type="date" value="${v(d.alisTarih)}"></div></div>
+  <div class="f"><label>Nereden</label><select id="fKaynak">${KAYNAK.map(k=>`<option ${d.kaynak===k?"selected":""}>${k}</option>`).join("")}</select></div>
+  <div class="two"><div class="f"><label>Kimden aldım</label><input id="fKisi" value="${v(d.kisiAd)}" placeholder="Ad soyad"></div>
+  <div class="f"><label>Telefonu</label><input id="fKisiT" inputmode="tel" value="${v(d.kisiTel)}"></div></div>
+  <div class="f"><label>Not (kimlik, durum, pil, vb.)</label><textarea id="fNot" rows="2">${v(d.kisiNot)}</textarea></div>
+  <div class="two"><div class="f"><label>Masraf (tamir vb.) ₺</label><input id="fMasraf" inputmode="decimal" value="${v(d.masraf)}"></div>
+  <div class="f"><label>Satmayı düşündüğüm fiyat ₺</label><input id="fHedef" inputmode="decimal" value="${v(d.hedefFiyat)}"></div></div>
+  <div class="sec">Satış (satılınca doldur)</div>
+  <div class="two"><div class="f"><label>Satış fiyatı (₺)</label><input id="fSatis" inputmode="decimal" value="${v(d.satisFiyat)}"></div>
+  <div class="f"><label>Satış tarihi</label><input id="fSatisT" type="date" value="${v(d.satisTarih)}"></div></div>
+  <div class="two"><div class="f"><label>Alıcı</label><input id="fAlici" value="${v(d.aliciAd)}" placeholder="Ad soyad"></div>
+  <div class="f"><label>Alıcı telefonu</label><input id="fAliciT" inputmode="tel" value="${v(d.aliciTel)}"></div></div>
+  <div class="hint" id="profH" style="font-size:14px"></div>
+  <div class="hint rd" id="errH"></div>
+  <div class="acts"><button class="btn pri" data-act="save">Kaydet</button><button class="btn" data-act="close">Vazgeç</button>
+  ${p?`<button class="btn dng" data-act="del">Kaydı sil</button>`:""}</div>`;
+  $("ov").classList.add("on");syncCat();formHints();
+}
+function closeForm(){$("ov").classList.remove("on");editing=null}
+function curModel(){const s=$("fModel").value;return s==="__c"?$("fModelC").value.trim():s}
+function formHints(){
+  const c=$("fCat").value,im=cleanId($("fImei").value,c);const h=$("imeiH");
+  const dup=im&&phones.some(p=>p.imei===im&&p.id!==editing);
+  const bad=c==="iphone"&&im&&im.length!==15;
+  h.className="hint "+(dup||bad?"rd":"");
+  h.textContent=dup?"Bu numara başka bir kayıtta var.":(bad?`${im.length}/15 hane`:"");
+  const sf=numOrNull($("fSatis").value);
+  if(sf!=null){const c=(numOrNull($("fAlis").value)||0)+(numOrNull($("fMasraf").value)||0);const k=sf-c;
+    $("profH").innerHTML=`Kâr: <b class="${clsP(k)}">${money(k)}</b>`}else $("profH").textContent="";
+}
+async function saveForm(){
+  if(saving)return;
+  const model=curModel(),alis=numOrNull($("fAlis").value),err=$("errH");
+  if(!model){err.textContent="Model seç.";return}
+  if(alis==null){err.textContent="Alış fiyatını yaz.";return}
+  const satis=numOrNull($("fSatis").value);
+  let satisT=$("fSatisT").value;if(satis!=null&&!satisT)satisT=today();
+  const st=$("fSt").value,kat=$("fCat").value;
+  const old=editing?phones.find(x=>x.id===editing):null;
+  const p={id:editing||("p"+Date.now().toString(36)+Math.random().toString(36).slice(2,5)),
+    kat,model,hafiza:st===""?"":(isNaN(+st)?st:+st),renk:$("fRenk").value.trim(),imei:cleanId($("fImei").value,kat),
+    kaynak:$("fKaynak").value,kisiAd:$("fKisi").value.trim(),kisiTel:$("fKisiT").value.trim(),kisiNot:$("fNot").value.trim(),
+    alisFiyat:alis,alisTarih:$("fAlisT").value,masraf:numOrNull($("fMasraf").value)||0,hedefFiyat:numOrNull($("fHedef").value),
+    satisFiyat:satis,satisTarih:satis!=null?satisT:"",aliciAd:$("fAlici").value.trim(),aliciTel:$("fAliciT").value.trim(),
+    olusturma:old?old.olusturma:Date.now()};
+  saving=true;err.textContent="";
+  try{await persist(p);closeForm();toast(satis!=null?"Satış kaydedildi":"Kaydedildi")}
+  catch(e){err.textContent="Kaydedilemedi, tekrar dene."}
+  saving=false;
+}
+
+// ---------- CSV ----------
+function cell(s){s=String(s==null?"":s);if(/^[=+\-@]/.test(s))s="'"+s;return /[;"\n\r]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s}
+async function exportCsv(){
+  const H=["Durum","Tür","Model","Hafıza/Boyut","Renk","IMEI/Seri","Nereden","Kimden aldım","Telefon","Not","Alış tarihi","Alış fiyatı","Masraf","Hedef fiyat","Satış tarihi","Satış fiyatı","Alıcı","Alıcı telefon","Kâr"];
+  const rows=phones.slice().sort((a,b)=>(b.alisTarih||"").localeCompare(a.alisTarih||"")).map(p=>[
+    isSold(p)?"Satıldı":"Stokta",CAT[catOf(p)].ad,p.model,GB(p.hafiza),p.renk,null,p.kaynak,p.kisiAd,p.kisiTel,p.kisiNot,fmtD(p.alisTarih),p.alisFiyat,p.masraf,p.hedefFiyat,fmtD(p.satisTarih),p.satisFiyat,p.aliciAd,p.aliciTel,isSold(p)?profit(p):""]
+    .map((x,i)=>i===5?(p.imei?`"=""${p.imei}"""`:""):cell(x)).join(";"));
+  const csv="﻿"+[H.map(cell).join(";")].concat(rows).join("\r\n");
+  if(await saveFile("apple-stok-"+today()+".csv",csv,"text/csv"))toast("Hazır");
+}
+
+// ---------- olaylar ----------
+document.addEventListener("click",e=>{
+  const cb=e.target.closest("[data-cat]");if(cb){fcat=cb.dataset.cat;render();return}
+  const tb=e.target.closest("[data-tab]");if(tb){tab=tb.dataset.tab;q="";render();window.scrollTo(0,0);return}
+  const a=e.target.closest("[data-act]");if(!a)return;
+  const act=a.dataset.act;
+  if(act==="new")openForm(null);
+  else if(act==="addm"){e.stopPropagation();openForm(null,a.dataset.model)}
+  else if(act==="tg"){const n=a.dataset.model;open.has(n)?open.delete(n):open.add(n);renderList()}
+  else if(act==="edit")openForm(a.dataset.id);
+  else if(act==="save")saveForm();
+  else if(act==="close")closeForm();
+  else if(act==="del"){
+    if(a.dataset.sure){remove(editing).then(()=>{closeForm();toast("Silindi")}).catch(()=>$("errH").textContent="Silinemedi.")}
+    else{a.dataset.sure="1";a.textContent="Emin misin? Silmek için tekrar dokun"}
+  }
+  else if(act==="csv")exportCsv();
+  else if(act==="bak")backup();
+  else if(act==="geri")$("fFile").click();
+});
+document.addEventListener("input",e=>{
+  const t=e.target;
+  if(t.id==="q"){q=t.value;renderList()}
+  else if(t.closest("#sheet"))formHints();
+});
+document.addEventListener("change",e=>{
+  const t=e.target;
+  if(t.id==="fFile"){if(t.files[0])restore(t.files[0]);t.value=""}
+  else if(t.id==="showAll"){showAll=t.checked;renderList()}
+  else if(t.id==="fCat"){
+    const c=t.value;$("fModel").innerHTML=modelOpts(c,"");$("fModelC").style.display="none";
+    $("fSt").innerHTML=stOpts("","",c);syncCat();formHints();
+  }
+  else if(t.id==="fModel"){
+    const c=$("fCat").value;
+    $("fModelC").style.display=t.value==="__c"?"block":"none";
+    $("fSt").innerHTML=stOpts(t.value==="__c"?"":t.value,null,c);
+  }
+});
+$("ov").addEventListener("click",e=>{if(e.target.id==="ov")closeForm()});
+init();
+</script>
+</body>
+</html>
